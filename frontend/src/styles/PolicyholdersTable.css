@@ -1,0 +1,106 @@
+/* Policyholders Table Styles */
+.table-container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.table-container h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.policyholders-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.policyholders-table thead {
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #667eea;
+}
+
+.policyholders-table th {
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.policyholders-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.policyholders-table tbody tr {
+  transition: background-color 0.2s;
+}
+
+.policyholders-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.policyholders-table tbody tr.status-active {
+  border-left: 4px solid #4caf50;
+}
+
+.policyholders-table tbody tr.status-pending {
+  border-left: 4px solid #ff9800;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.badge-active {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.badge-pending {
+  background-color: #fff3e0;
+  color: #e65100;
+}
+
+.btn-recommend {
+  background-color: #667eea;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.btn-recommend:hover {
+  background-color: #764ba2;
+}
+
+@media (max-width: 768px) {
+  .policyholders-table {
+    font-size: 13px;
+  }
+
+  .policyholders-table th,
+  .policyholders-table td {
+    padding: 8px;
+  }
+
+  .btn-recommend {
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+}
